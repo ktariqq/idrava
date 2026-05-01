@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Idrava</title>
+  <title>Idrava — Coming Soon</title>
+
   <style>
     body {
       margin: 0;
@@ -37,23 +38,24 @@
 
     .hero {
       text-align: center;
-      padding: 100px 20px;
+      padding: 110px 20px;
     }
 
     .hero h1 {
       font-size: 42px;
+      margin-bottom: 10px;
     }
 
-    .purple {
-      color: #8A5CFF;
+    .subtitle {
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 25px;
     }
 
-    .cyan {
-      color: #2DE2E6;
-    }
+    .purple { color: #8A5CFF; }
+    .cyan { color: #2DE2E6; }
 
     .btn {
-      margin-top: 20px;
+      margin-top: 10px;
       padding: 12px 20px;
       border: none;
       border-radius: 10px;
@@ -72,6 +74,8 @@
       padding: 20px;
       border-radius: 12px;
       margin: 10px;
+      flex: 1;
+      min-width: 220px;
     }
 
     .grid {
@@ -80,11 +84,47 @@
       flex-wrap: wrap;
     }
 
+    .tag {
+      display: inline-block;
+      padding: 6px 12px;
+      background: rgba(138,92,255,0.15);
+      border: 1px solid rgba(138,92,255,0.4);
+      border-radius: 20px;
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+
     footer {
       text-align: center;
       padding: 30px;
       opacity: 0.5;
       border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+    }
+
+    .email {
+      margin-top: 20px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.5);
+    }
+
+    .email a {
+      color: #8A5CFF;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -95,103 +135,88 @@
   <div class="logo">Idrava</div>
   <nav>
     <a href="#about">About</a>
-    <a href="#systems">Systems</a>
+    <a href="#vision">Vision</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
 
+<!-- HERO -->
 <div class="hero">
+  <div class="tag">PRE-LAUNCH • EARLY STAGE</div>
+
   <h1>
-    Intelligent systems for <span class="purple">perception</span>,
-    reasoning, and <span class="cyan">automation</span>
+    Building <span class="purple">intelligent systems</span> for modern technology
   </h1>
 
-  <p>AI systems startup building cognition-driven technologies.</p>
+  <p class="subtitle">
+    Idrava is currently in early development. We are designing the foundation for AI-driven and software systems.
+  </p>
 
-  <button class="btn">Explore Idrava</button>
+  <button class="btn">Join Early Updates</button>
 </div>
 
+<!-- ABOUT -->
 <section id="about">
-  <h2>About</h2>
-  <p>
-    Idrava builds intelligent systems that transform data into understanding,
-    reasoning, and action.
+  <h2>About Idrava</h2>
+  <p style="color: rgba(255,255,255,0.75); line-height: 1.6;">
+    Idrava is an early-stage technology initiative focused on building intelligent systems across software engineering, artificial intelligence, and computational design.  
+    <br><br>
+    The company is currently in pre-launch development, with initial work centered on system architecture, AI applications, and scalable software foundations.
   </p>
 </section>
 
-<section id="systems">
-  <h2>Core Systems</h2>
+<!-- VISION -->
+<section id="vision">
+  <h2>Development Focus</h2>
 
   <div class="grid">
+
     <div class="card">
-      <h3>Perception Systems</h3>
-      <p>Extract meaning from data inputs.</p>
+      <h3>AI Systems</h3>
+      <p>Research and development of intelligent models and applications.</p>
     </div>
 
     <div class="card">
-      <h3>Reasoning Engines</h3>
-      <p>Simulate decision-making logic.</p>
+      <h3>Software Engineering</h3>
+      <p>Building scalable and production-ready software systems.</p>
     </div>
 
     <div class="card">
-      <h3>Automation Layers</h3>
-      <p>Convert intelligence into action.</p>
+      <h3>Automation & Tools</h3>
+      <p>Developing systems that improve efficiency and decision-making.</p>
     </div>
+
   </div>
 </section>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Build something intelligent? Let’s connect.</p>
-  <p>email: contact@idrava.ai</p>
+<!-- CONTACT / WAITLIST -->
+<section id="contact" style="text-align: center;">
+  <h2>Early Access</h2>
+
+  <p style="color: rgba(255,255,255,0.6); margin-bottom: 30px;">
+    Idrava is currently pre-launch. Join the early list for updates and future access.
+  </p>
+
+  <form action="https://formsubmit.co/your-email@example.com" method="POST">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+
+    <textarea name="message" rows="4" placeholder="Optional message"></textarea>
+
+    <input type="hidden" name="_captcha" value="false">
+
+    <button class="btn" type="submit">Join Waitlist</button>
+  </form>
+
+  <p class="email">
+    Contact: <a href="mailto:idrava.contact@gmail.com">idrava.contact@gmail.com</a>
+  </p>
 </section>
 
 <footer>
-  © Idrava — Intelligent Systems
+  © Idrava — Pre-launch Technology Initiative
 </footer>
 
-<section id="contact" style="padding: 60px 40px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center;">
-
-  <h2 style="font-size: 28px; margin-bottom: 10px;">Contact Idrava</h2>
-
-  <p style="color: rgba(255,255,255,0.6); margin-bottom: 30px;">
-    Have a project, idea, or collaboration in mind? Let’s talk.
-  </p>
-
-  <!-- CONTACT FORM -->
-  <form action="https://formsubmit.co/your-email@example.com" method="POST"
-        style="max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 12px;">
-
-    <input type="text" name="name" placeholder="Your Name" required
-      style="padding: 12px; border-radius: 8px; border: none; outline: none;">
-
-    <input type="email" name="email" placeholder="Your Email" required
-      style="padding: 12px; border-radius: 8px; border: none; outline: none;">
-
-    <textarea name="message" placeholder="Your Message" rows="5" required
-      style="padding: 12px; border-radius: 8px; border: none; outline: none;"></textarea>
-
-    <!-- Redirect after submit -->
-    <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
-
-    <!-- Disable captcha -->
-    <input type="hidden" name="_captcha" value="false">
-
-    <button type="submit"
-      style="padding: 12px; background: #8A5CFF; color: white; border: none; border-radius: 8px; cursor: pointer;">
-      Send Message
-    </button>
-
-  </form>
-
-  <!-- DIRECT EMAIL OPTION -->
-  <p style="margin-top: 20px; color: rgba(255,255,255,0.5); font-size: 14px;">
-    Or email directly: <a href="mailto:idrava.contact@gmail.com" style="color: #8A5CFF;">\idrava.contact@gmail.com</a>
-  </p>
-
-</section>
-
-
-  
 </body>
 </html>
